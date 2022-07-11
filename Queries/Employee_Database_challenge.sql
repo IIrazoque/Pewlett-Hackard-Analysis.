@@ -12,7 +12,7 @@ INNER JOIN titles as tt
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 
 -- run to view table
-SELECT * FROM  retirement_titles;
+--SELECT * FROM  retirement_titles;
 
 -- Use Dictinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (emp_no) emp_no,
@@ -24,7 +24,6 @@ FROM retirement_titles
 ORDER BY emp_no, to_date DESC;
 -- run to view table
 SELECT * FROM unique_titles;
-
 
 --number of employees by their most recent job title who are about to retire
 SELECT COUNT (ut.title), ut.title
